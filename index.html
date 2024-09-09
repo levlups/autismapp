@@ -1,1 +1,110 @@
-lol
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Communication Board</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 10px;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background: linear-gradient(to bottom right, #ffcccb, #ffeb3b);
+            border-radius: 10px;
+        }
+
+        .grid div {
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            width: 80px;
+            height: 80px;
+            display: block;
+            margin: 0 auto;
+            cursor: pointer;
+        }
+
+        .label {
+            margin-top: 5px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .header {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+    </style>
+    <script>
+        function playSound(sound) {
+            const audio = new Audio(sound);
+            audio.play();
+        }
+    </script>
+</head>
+<body>
+
+    <div class="header">
+        <h1>I want</h1>
+    </div>
+
+    <div class="grid">
+        <div onclick="playSound('veux.mp3')">
+            <img src="apple_juice.png" alt="Apple Juice">
+            <div class="label">Apple Juice</div>
+        </div>
+        <div onclick="playSound('hug.mp3')">
+            <img src="hug.png" alt="Hug">
+            <div class="label">Hug</div>
+        </div>
+        <div onclick="playSound('trampoline.mp3')">
+            <img src="trampoline.png" alt="Trampoline">
+            <div class="label">Trampoline</div>
+        </div>
+        <div onclick="playSound('pasta.mp3')">
+            <img src="pasta.png" alt="Pasta">
+            <div class="label">Pasta</div>
+        </div>
+        <div onclick="playSound('yogurt.mp3')">
+            <img src="yogurt.png" alt="Yogurt">
+            <div class="label">Yogurt</div>
+        </div>
+        <div onclick="playSound('milk.mp3')">
+            <img src="milk.png" alt="Milk">
+            <div class="label">Milk</div>
+        </div>
+        <div onclick="playSound('cookie.mp3')">
+            <img src="cookie.png" alt="Cookie">
+            <div class="label">Cookie</div>
+        </div>
+        <div onclick="playSound('story.mp3')">
+            <img src="story.png" alt="Story">
+            <div class="label">Story</div>
+        </div>
+        <div onclick="playSound('fish_crackers.mp3')">
+            <img src="fish_crackers.png" alt="Fish Crackers">
+            <div class="label">Fish Crackers</div>
+        </div>
+    </div>
+
+</body>
+</html>
